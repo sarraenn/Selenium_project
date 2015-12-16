@@ -1,0 +1,3 @@
+
+test :
+# EXECUTE_SAHI sahi-test-script ON appsahi USING sahiConf.properties
