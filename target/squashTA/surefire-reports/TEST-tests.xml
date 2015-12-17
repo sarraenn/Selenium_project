@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite time="0.0" failures="0" tests="3" name="tests" >
-  <testcase time="0.0" classname="tests" name="AppSahiTest" />
-  <testcase time="0.0" classname="tests" name="AppSeleniumTest" />
-  <testcase time="0.0" classname="tests" name="first-test.ta" />
+<testsuite time="40.276" failures="0" tests="1" name="tests" >
+  <testcase time="40.266" classname="tests" name="AppSeleniumTest" />
 </testsuite>

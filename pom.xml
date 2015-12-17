@@ -5,14 +5,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.squashtest.ta</groupId>
-	<artifactId>squash-ta-project-archetype</artifactId>
+	<artifactId>squash-ta-project-archetype2</artifactId>
 	<packaging>pom</packaging>
-	<version>1.7.1-RELEASE</version>
+	<version>1.8.0-RELEASE</version>
 
 	<!-- Properties definition -->
 	<properties>
         <!-- Squash-TA framework version used by the project -->
-		<ta.framework.version>1.7.1-RELEASE</ta.framework.version>
+		<ta.framework.version>1.8.0-RELEASE</ta.framework.version>
         <!-- Log configuration file -->
         <logConfFile>src/log4j.properties</logConfFile>
 	</properties>
@@ -34,14 +34,6 @@
                 <!--        <version>5.1.19</version> -->
                 <!--     </dependency> -->
 				<!-- </dependencies> -->
-				
-				<dependencies> 
-                    <dependency> 
-                        <groupId>mysql</groupId> 
-                        <artifactId>mysql-connector-java</artifactId> 
-                        <version>5.1.19</version> 
-                     </dependency> 
-			    </dependencies> 
 				
 				<!-- Under here is the Squash TA framework default configuration -->
 				<configuration>
@@ -69,6 +61,9 @@
 							<jobName>${jobname}</jobName>
 							<hostName>${hostname}</hostName>
 							<endpointLoginConfFile>${squash.ta.conf.file}</endpointLoginConfFile>
+                            <reportBaseUrl>${ta.tmcallback.reportbaseurl}</reportBaseUrl>
+                            <jobExecutionId>${ta.tmcallback.jobexecutionid}</jobExecutionId>
+                            <reportName>${ta.tmcallback.reportname}</reportName>
                         </tmCallBack>
 					</configurers>
 				</configuration>

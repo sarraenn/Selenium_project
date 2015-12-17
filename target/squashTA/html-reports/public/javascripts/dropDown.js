@@ -1,6 +1,6 @@
 /*
  *     This file is part of the Squashtest platform.
- *     Copyright (C) 2011 - 2013 Henix
+ *     Copyright (C) 2011 - 2014 Henix
  *
  *     See the NOTICE file distributed with this work for additional
  *     information regarding copyright ownership.
@@ -42,9 +42,11 @@ function toggleDisplay(elementId) {
 		element.style.display = "table";
 		document.getElementById(elementId + '-expand').style.display = "none";
 		document.getElementById(elementId + '-collapse').style.display = "table-cell";
+		document.getElementById(elementId + '-collapse').style.verticalAlign = "middle";
 	} else if (display == "table") {
 		element.style.display = "none";
 		document.getElementById(elementId + '-expand').style.display = "table-cell";
+		document.getElementById(elementId + '-expand').style.verticalAlign = "middle";
 		document.getElementById(elementId + '-collapse').style.display = "none";
 	}
 }

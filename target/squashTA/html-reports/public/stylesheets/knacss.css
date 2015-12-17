@@ -1,6 +1,6 @@
 /**
  *     This file is part of the Squashtest platform.
- *     Copyright (C) 2011 - 2013 Henix
+ *     Copyright (C) 2011 - 2014 Henix
  *
  *     See the NOTICE file distributed with this work for additional
  *     information regarding copyright ownership.
@@ -497,8 +497,9 @@ textarea {
 /* ==main */
 /* ----------------------------- */
 
-.vmiddle {
-	vertical-align: middle;
+.col-mid {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 div.info {
@@ -617,7 +618,8 @@ h2 > img {
 .ie67 .line,
 .ie67 .mod,
 .ie67 .row,
-.ie67 .col {
+.ie67 .col,
+.ie67 .col-mid {
 	zoom: 1;
 }
 
@@ -625,6 +627,7 @@ h2 > img {
 /* warning: .col needs a width on IE6/IE7 */
 .ie67 .btn,
 .ie67 .col,
+.ie67 .col-mid,
 .ie67 .inbl {
 	display: inline;
 	zoom: 1;
