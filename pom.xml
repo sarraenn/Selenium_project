@@ -7,7 +7,7 @@
 	<groupId>org.squashtest.ta</groupId>
 	<artifactId>squash-ta-project-archetype</artifactId>
 	<packaging>pom</packaging>
-	<version>1.8.0-RELEASE</version>
+	<version>1.7.1-RELEASE</version>
 
 	<!-- Properties definition -->
 	<properties>
